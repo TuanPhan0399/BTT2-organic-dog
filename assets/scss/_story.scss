@@ -1,0 +1,91 @@
+// story
+.story {
+  margin-top: 6.5rem;
+  @include flex ($justify: space-between);
+
+  &-dog {
+    position: absolute;
+    z-index: 1;
+  }
+
+  &-vector {
+    position: absolute;
+    left: 4%;
+    top: 124%;
+    z-index: 1;
+  }
+
+  &-chicken-img {
+    position: absolute;
+    top: 114%;
+    z-index: 0;
+  }
+
+  &-chicken-title {
+    position: absolute;
+    top: 136.2%;
+    left: 37.2%;
+    z-index: 1;
+  }
+
+  &-chicken-subTitle {
+    position: absolute;
+    top: 174.5%;
+    left: 21.3%;
+    z-index: 1;
+  }
+
+  &-place {
+    margin-top: 5.8rem;
+  }
+
+  &-content {
+    @include flex;
+    margin-top: 8.5rem;
+    margin-left: 21.2rem;
+    gap: 8.7rem;
+  }
+
+  &-heading {
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $third-color;
+
+    span {
+      text-transform: capitalize;
+      font-size: 9.4rem;
+      color: $second-color;
+    }
+  }
+
+  &-sub {
+    display: flex;
+    flex-direction: column;
+    gap: 3.8rem;
+
+    &-p {
+      max-height: 18.6rem;
+      font-size: 1.6rem;
+      font-weight: 400;
+      letter-spacing: 0.2rem;
+      color: $four-color;
+      line-height: 2;
+      overflow: hidden;
+    }
+
+    &-btn {
+      font-size: 1.4rem;
+      text-decoration: none;
+      color: $second-color;
+      text-transform: uppercase;
+      letter-spacing: 0.4rem;
+      font-weight: bold;
+      
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+

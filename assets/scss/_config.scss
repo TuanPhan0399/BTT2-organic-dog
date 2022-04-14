@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+$primary-color: #412e34;
+$second-color: #2ea2d0;
+$third-color: #452a31;
+$four-color: #3d3d3d;
+
+html {
+  // 1rem = 10px
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@mixin flex ($align: flex-start, $justify: flex-start, $wrap: nowrap) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-wrap: $wrap;
+}
+
+// 1440px, 1362px
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  overflow-x: clip;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1362px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.heading {
+  font-size: 4.2rem;
+  text-transform: uppercase;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  color: $third-color;
+}
+.btn {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 2.1rem 2.4rem;
+  background-color: $second-color;
+  border: none;
+  font-weight: bold;
+
+  &:hover {
+    color: $second-color;
+    background-color: $primary-color;
+  }
+} 

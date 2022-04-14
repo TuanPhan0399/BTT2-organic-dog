@@ -1,0 +1,65 @@
+//header
+
+.header {
+  padding-top: 3.8rem;
+  background-image: linear-gradient(120deg,#b5dcef,#73acc7);
+  height: 658px;
+
+  &-top{
+    @include flex(center,space-between);
+
+    &-logo {
+      padding-left: 1.5rem;
+    }
+  }
+
+  &-menu {
+
+    &-list {
+      @include flex(center);
+      margin-top: 3px;
+    }
+    &-item {
+      padding: 2.4rem 2.75rem;
+
+      &:last-child{
+        padding-right: 2.4rem;
+      }
+    }
+
+    &-link {
+      font-size: 1.42rem;
+      font-weight: bold;
+      letter-spacing: 0.4rem;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    &-item:hover &-link {
+      color: #2ea2d0;
+    }
+
+  }
+
+  &-banner {
+    margin-top: 6.6rem;
+
+    &-design {
+      margin-top: 7.8rem;
+      position: absolute;
+      left: -2.7rem;
+      z-index: 1;
+    }
+
+    &-sub {
+      position: absolute;
+      left: 54rem;
+    }
+
+    &-dog {
+      position: absolute;
+      right: -5rem;
+    }
+  }
+}

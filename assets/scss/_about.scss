@@ -1,0 +1,60 @@
+// about
+.about {
+  margin-top: 8.5rem;
+  margin-bottom: 8.8rem;
+  background-color: #f0f0f0;
+
+  &-right {
+    max-width: 40.2rem;
+  }
+
+  &-container {
+    @include flex($justify: space-between);
+    margin-left: 13.3rem;
+    margin-right: 14.8rem;
+    padding-top: 10.2rem;
+    padding-bottom: 6.5rem;
+  }
+
+  &-search {
+    margin-top: 4.6rem;
+    margin-bottom: 3.3rem;
+    position: relative;
+
+    input {
+      width: 100%;
+      padding-bottom: 1.6rem;
+      background: #f0f0f0;
+      border: none;
+      border-bottom: 1px solid #808080;
+
+      &::placeholder {
+        font-size: 1.6rem;
+      }
+    }
+
+    i {
+      position: absolute;
+      font-size: 2rem;
+      right: 0rem;
+      color: #808080;
+      cursor: pointer;
+    }
+
+  }
+
+  &-content-p {
+    margin-top: 2.2rem;
+    margin-bottom: 4.3rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 300;
+    color: $four-color;
+  }
+
+  &-dog {
+    position: absolute;
+    top: -22.5%;
+    left: 41%;
+  }
+}

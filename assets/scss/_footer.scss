@@ -1,0 +1,69 @@
+//footer
+.footer {
+  height: 52.5rem;
+  margin-right: 5.8rem;
+  margin-left: 5.8rem;
+  margin-top: 10.9rem;
+  margin-bottom: 6.5rem;
+  background-image: url(/assets/img/footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &-container {
+    align-items: end;
+    position: absolute;
+    display: flex;
+    bottom: 4%;
+    right: 2.5%;
+    justify-content: end;
+    gap: 8.6rem;
+  }
+
+  &-content {
+    height: 10.9rem;
+    max-width: 37.7rem;
+  }
+
+  &-menu {
+    margin-bottom: 3.6rem;
+
+    &-top {
+      margin-bottom: 2.6rem;
+    }
+
+    &-link {
+      font-size: 1.4rem;
+      font-weight: bold;
+      letter-spacing: 0.35rem;
+      color: $primary-color;
+      text-decoration: none;
+      text-transform: uppercase;
+      &:hover {
+        color: #2ea2d0;
+      }
+      &:first-child {
+        padding-right: 5.1rem;
+      }
+    }
+  }
+
+  &-copy {
+    font-size: 1.4rem;
+  }
+
+  &-socials {
+
+    i {
+      font-size: 3rem;
+      color: $second-color;
+      padding-left: 1rem;
+      cursor: pointer;
+      
+      &:hover {
+        color: $third-color;
+      }
+    }
+  }
+}
+

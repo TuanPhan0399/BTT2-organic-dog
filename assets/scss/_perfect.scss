@@ -1,0 +1,36 @@
+//perfect
+.perfect {
+  margin-top: 49.8rem;
+  @include flex($justify: space-between);
+  gap: 2.8rem;
+
+  &-content {
+    margin-left: 20.9rem;
+    margin-top: 9rem;
+
+    &-p {
+      font-size: 1.6rem;
+      max-width: 61.2rem;
+      line-height: 2;
+      font-weight: 300;
+      color: $four-color;
+      margin-top: 3.4rem;
+      margin-bottom: 3.5rem;
+      overflow: hidden;
+    }
+  }
+
+  &-life {
+    position: relative;
+  }
+
+  &-dog {
+    margin-right: 13rem;
+  }
+
+  &-vector {
+    position: absolute;
+    top: 0rem;
+    left: 29.4rem;
+  }
+}
