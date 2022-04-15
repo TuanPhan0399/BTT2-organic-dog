@@ -364,17 +364,16 @@
     margin-top: 0;
     margin-bottom: 0;
 
-    &-dog {
-      top: 19.5%;
-      left: 73%;
-      display: block;
-    }
-
     &-container {
       margin-left: 4rem;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 3rem;
     }
+
     &-right {
-      display: none;
+      max-width: 35.2rem;
+      overflow: hidden;
     }
   }
 
@@ -426,7 +425,7 @@
     height: 34.1rem;
 
     &-logo > img {
-      font-size: 4rem;
+      height: 4rem;
     }
   }
 
@@ -451,17 +450,6 @@
 
     &-content {
       margin-top: 3rem;
-    }
-  }
-
-  .about {
-
-    &-left {
-      margin-left: 6rem;
-    }
-
-    &-dog {
-      display: none;
     }
   }
 

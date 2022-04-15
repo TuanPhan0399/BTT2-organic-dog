@@ -733,16 +733,15 @@ body {
     margin-top: 0;
     margin-bottom: 0;
   }
-  .about-dog {
-    top: 19.5%;
-    left: 73%;
-    display: block;
-  }
   .about-container {
     margin-left: 4rem;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 3rem;
   }
   .about-right {
-    display: none;
+    max-width: 35.2rem;
+    overflow: hidden;
   }
 
   .find {
@@ -787,7 +786,7 @@ body {
     height: 34.1rem;
   }
   .header-logo > img {
-    font-size: 4rem;
+    height: 4rem;
   }
 
   .story-content {
@@ -806,13 +805,6 @@ body {
   }
   .perfect-content {
     margin-top: 3rem;
-  }
-
-  .about-left {
-    margin-left: 6rem;
-  }
-  .about-dog {
-    display: none;
   }
 
   .find {
