@@ -432,29 +432,105 @@
   .story {
     
     &-content {
+      flex-direction: column;
+      align-items: center;
       margin-left: 3rem;
+      gap: 2rem;
+    }
+
+    &-sub {
+      align-items: center;
+
+      &-btn {
+        font-size: 3rem;
+      }
+    }
+
+    &-sub-p {
+      color: $third-color;
+      font-size: 3rem;
+      line-height: 1.5;
     }
 
     &-chicken-title {
       left: 22.2%;
     }
+
+    &-dog {
+      display: none;
+    }
+  }
+
+  .heading {
+    font-size: 6rem;
+  }
+
+  .btn {
+    font-size: 3rem;
   }
 
   .perfect {
     align-items: center;
 
     &-dog {
-      width: 36.2rem;
-      height: 30.4rem;
+      display: none;
     }
 
     &-content {
       margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &-p {
+        font-size: 3rem;
+        color: $primary-color;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .about {
+
+    &-container {
+      align-items: start;
+      padding-top: 3rem;
+      gap: 7rem;
+    }
+
+    &-right {
+      max-width: 100%;
+    }
+
+    &-content-p {
+      font-size: 3rem;
+      color: $primary-color;
+    }
+
+    &-search {
+      font-size: 4rem;
+      color: $primary-color;
+
+      input::placeholder {
+        font-size: 2.6rem;
+        color: $primary-color;
+      }
+
+      i {
+        font-size: 4rem;
+        color: $primary-color;
+      }
     }
   }
 
   .find {
-    margin-left: 8rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+
+    &-content-p {
+      font-size: 3rem;
+      color: $primary-color;
+    }
   }
 
   .footer {
@@ -462,6 +538,10 @@
 
     &-content {
       display: none;
+    }
+
+    &-socials > i {
+      font-size: 4rem;
     }
   }
 }

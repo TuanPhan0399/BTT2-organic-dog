@@ -790,25 +790,87 @@ body {
   }
 
   .story-content {
+    flex-direction: column;
+    align-items: center;
     margin-left: 3rem;
+    gap: 2rem;
+  }
+  .story-sub {
+    align-items: center;
+  }
+  .story-sub-btn {
+    font-size: 3rem;
+  }
+  .story-sub-p {
+    color: #452a31;
+    font-size: 3rem;
+    line-height: 1.5;
   }
   .story-chicken-title {
     left: 22.2%;
+  }
+  .story-dog {
+    display: none;
+  }
+
+  .heading {
+    font-size: 6rem;
+  }
+
+  .btn {
+    font-size: 3rem;
   }
 
   .perfect {
     align-items: center;
   }
   .perfect-dog {
-    width: 36.2rem;
-    height: 30.4rem;
+    display: none;
   }
   .perfect-content {
     margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .perfect-content-p {
+    font-size: 3rem;
+    color: #412e34;
+    line-height: 1.5;
+  }
+
+  .about-container {
+    align-items: start;
+    padding-top: 3rem;
+    gap: 7rem;
+  }
+  .about-right {
+    max-width: 100%;
+  }
+  .about-content-p {
+    font-size: 3rem;
+    color: #412e34;
+  }
+  .about-search {
+    font-size: 4rem;
+    color: #412e34;
+  }
+  .about-search input::placeholder {
+    font-size: 2.6rem;
+    color: #412e34;
+  }
+  .about-search i {
+    font-size: 4rem;
+    color: #412e34;
   }
 
   .find {
-    margin-left: 8rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  .find-content-p {
+    font-size: 3rem;
+    color: #412e34;
   }
 
   .footer {
@@ -816,6 +878,9 @@ body {
   }
   .footer-content {
     display: none;
+  }
+  .footer-socials > i {
+    font-size: 4rem;
   }
 }
 
