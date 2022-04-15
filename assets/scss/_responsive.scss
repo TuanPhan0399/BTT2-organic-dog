@@ -1,0 +1,479 @@
+// responsive
+
+// 1200
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 60%;
+  }
+
+  img {
+    max-height: 90%;
+    max-width: 100%;
+  }
+
+  .header {
+    height: 62.4rem;
+
+    &-menu-item{
+      padding: 1.5rem 1.5rem;
+    }
+  }
+
+  .story {
+
+    &-vector {
+      display: none;
+    }
+
+    &-dog {
+      max-height: 100%;
+    }
+
+    &-content {
+      margin-top: 3rem;
+      margin-left: 15rem;
+      margin-right: 2rem;
+      z-index: 2;
+    }
+
+    &-sub {
+      gap: 2rem;
+
+      &-p {
+        letter-spacing: 0;
+      }
+    }
+
+    &-place {
+      z-index: 2;
+    }
+ 
+    &-chicken-img{
+      top: 82%;
+    }
+
+    &-chicken-title {
+      top: 107.2%;
+      left: 31.2%;
+      width: 37.2rem;
+      height: 9.5rem;
+    }
+
+    &-chicken-subTitle {
+      display: none;
+    }
+  }
+
+  .perfect {
+    margin-top: 20.8rem;
+
+    &-content {
+      margin-left: 4rem;
+      margin-bottom: 2rem;
+    }
+
+    &-dog {
+      width: 34.2rem;
+      height: 42.4rem;
+    }
+    &-vector {
+      display: none;
+    }
+  }
+  
+  .about-dog {
+    display: none;
+  }
+
+  .find {
+    margin-left: 10.2rem;
+    margin-right: 13rem;
+  }
+
+  .footer {
+    height: 45.5rem;
+
+    &-container {
+      gap: 0;
+    }
+
+    &-menu-link {
+      letter-spacing: 0;
+    }
+  }
+}
+
+//sceen laptop 1024
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 55%;
+  }
+
+  img {
+    max-height: 80%;
+    max-width: 100%;
+  }
+
+  .header {
+    height: 58.6rem;
+    padding-top: 1.8rem;
+
+    &-menu-item {
+      padding: 1rem 1.5rem;
+    }
+    &-menu-link {
+      letter-spacing: 0;
+    }
+  }
+
+  .story {
+
+    &-vector {
+      display: none;
+    }
+
+    &-dog {
+      max-height: 100%;
+    }
+
+    &-content {
+      margin-top: 3rem;
+      margin-left: 15rem;
+      margin-right: 2rem;
+      z-index: 2;
+    }
+
+    &-sub {
+      gap: 2rem;
+
+      &-p {
+        letter-spacing: 0;
+      }
+    }
+    
+    &-place {
+      display: none;
+    }
+
+    &-chicken-img{
+      top: 116%;
+    }
+
+    &-chicken-title {
+      top: 125.2%;
+      left: 31.2%;
+      width: 37.2rem;
+      height: 9.5rem;
+    }
+
+    &-chicken-subTitle {
+      display: none;
+    }
+  }
+
+  .perfect {
+    margin-top: 20.8rem;
+
+    &-content {
+      margin-left: 4rem;
+      margin-bottom: 2rem;
+    }
+
+    &-dog {
+      width: 34.2rem;
+      height: 42.4rem;
+    }
+    &-vector {
+      display: none;
+    }
+  }
+
+  .about {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &-dog {
+      display: none;
+    }
+
+    &-container {
+      margin-left: 4rem;
+      margin-right: 4rem;
+    }
+
+    &-search {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    &-content-p {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      line-height: 1.1;
+    }
+  }
+
+  .find {
+    margin-left: 15rem;
+    margin-right: 4rem;
+
+    &-container > img {
+      display: none;
+    }
+  }
+
+  .footer {
+    height: 41.5rem;
+    margin-top: 3rem;
+
+    &-container {
+      gap: 0;
+    }
+
+    &-content {
+      height: 5.9rem;
+    }
+    &-menu {
+      margin-bottom: 1rem;
+
+      &-top {
+        margin-bottom: 1rem;
+      }
+
+      &-link:first-child {
+        padding-right: 3.1rem;
+      }
+    }
+  }
+}
+
+//screen mobie tablet
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 70%;
+  }
+
+  .header {
+    height: 47.1rem;
+    padding-top: 1.8rem;
+    label {
+      display: block;
+    }
+    label #btn {
+      display: block;
+    }
+
+    &-menu-list {
+      position: fixed;
+      width: 38%;
+      height: 24%;
+      right: -100%;
+      background-color: $primary-color;
+      display: flex;
+      top: 7%;
+      align-items: center;
+      z-index: 2;
+      flex-direction: column;
+      transform: all 5s;
+    }
+
+    &-menu-item {
+      padding: 2rem;
+    }
+
+    #check:checked ~ &-menu-list {
+      right: 0;
+    }
+    #check:checked ~ label #btn {
+      display: none;
+    }
+    #check:checked ~ label #cancel {
+      display: block;
+    }
+  }
+
+  .story {
+
+    &-vector {
+      display: none;
+    }
+
+    &-dog {
+      max-height: 100%;
+    }
+
+    &-content {
+      margin-top: 3rem;
+      margin-left: 15rem;
+      margin-right: 2rem;
+      z-index: 2;
+    }
+
+    &-sub {
+      gap: 2rem;
+
+      &-p {
+        letter-spacing: 0;
+      }
+    }
+    
+    &-place {
+      display: none;
+    }
+
+    &-chicken-img{
+      top: 116%;
+    }
+
+    &-chicken-title {
+      top: 125.2%;
+      left: 31.2%;
+      width: 37.2rem;
+      height: 9.5rem;
+    }
+
+    &-chicken-subTitle {
+      display: none;
+    }
+  }
+
+  .perfect {
+    margin-top: 20.8rem;
+
+    &-content {
+      margin-left: 4rem;
+    }
+
+    &-dog {
+      width: 34.2rem;
+      height: 42.4rem;
+    }
+    &-vector {
+      display: none;
+    }
+  }
+
+  .about {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &-dog {
+      top: 19.5%;
+      left: 73%;
+      display: block;
+    }
+
+    &-container {
+      margin-left: 4rem;
+    }
+    &-right {
+      display: none;
+    }
+  }
+
+  .find {
+    margin-left: 15rem;
+    margin-right: 4rem;
+
+    &-container > img {
+      display: none;
+    }
+  }
+  
+  .footer {
+    height: 33.5rem;
+    margin-top: 3rem;
+
+    &-container {
+      gap: 0;
+    }
+
+    &-content {
+      height: 5.9rem;
+    }
+    &-menu {
+      margin-bottom: 1rem;
+
+      &-top {
+        margin-bottom: 1rem;
+      }
+
+      &-link:first-child {
+        padding-right: 3.1rem;
+      }
+    }
+  }
+}
+//sceen mobie
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 45%;
+  }
+
+  img {
+    max-height: 60%;
+    max-width: 100%;
+  }
+
+  .header {
+    height: 34.1rem;
+
+    &-logo > img {
+      font-size: 4rem;
+    }
+  }
+
+  .story {
+    
+    &-content {
+      margin-left: 3rem;
+    }
+
+    &-chicken-title {
+      left: 22.2%;
+    }
+  }
+
+  .perfect {
+    align-items: center;
+
+    &-dog {
+      width: 36.2rem;
+      height: 30.4rem;
+    }
+
+    &-content {
+      margin-top: 3rem;
+    }
+  }
+
+  .about {
+
+    &-left {
+      margin-left: 6rem;
+    }
+
+    &-dog {
+      display: none;
+    }
+  }
+
+  .find {
+    margin-left: 8rem;
+  }
+
+  .footer {
+    height: 23.5rem;
+
+    &-content {
+      display: none;
+    }
+  }
+}

@@ -2,19 +2,34 @@
 
 .header {
   padding-top: 3.8rem;
-  background-image: linear-gradient(120deg,#b5dcef,#73acc7);
-  height: 658px;
+  background-image: url(/assets/img/bgheader1.png);
+  height:  71.4rem;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-  &-top{
+  label {
+    display: none;
+  }
+
+  label #btn,
+  label #cancel {
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    margin-right: 4rem;
+    display: none;
+  }
+
+  #check {
+    display: none;
+  }
+  
+  &-menu {
     @include flex(center,space-between);
-
+    
     &-logo {
       padding-left: 1.5rem;
     }
-  }
-
-  &-menu {
-
     &-list {
       @include flex(center);
       margin-top: 3px;

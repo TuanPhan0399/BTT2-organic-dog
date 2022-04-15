@@ -78,7 +78,6 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
-  overflow-x: clip;
 }
 
 .container {
@@ -112,16 +111,32 @@ body {
 
 .header {
   padding-top: 3.8rem;
-  background-image: linear-gradient(120deg, #b5dcef, #73acc7);
-  height: 658px;
+  background-image: url(/assets/img/bgheader1.png);
+  height: 71.4rem;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.header-top {
+.header label {
+  display: none;
+}
+.header label #btn,
+.header label #cancel {
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  margin-right: 4rem;
+  display: none;
+}
+.header #check {
+  display: none;
+}
+.header-menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
 }
-.header-top-logo {
+.header-menu-logo {
   padding-left: 1.5rem;
 }
 .header-menu-list {
@@ -167,7 +182,6 @@ body {
 }
 
 .story {
-  margin-top: 6.5rem;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -185,6 +199,7 @@ body {
 }
 .story-chicken-img {
   position: absolute;
+  width: 144rem;
   top: 114%;
   z-index: 0;
 }
@@ -211,6 +226,7 @@ body {
   margin-top: 8.5rem;
   margin-left: 21.2rem;
   gap: 8.7rem;
+  z-index: 2;
 }
 .story-heading {
   font-size: 3.2rem;
@@ -413,6 +429,402 @@ body {
 }
 .footer-socials i:hover {
   color: #452a31;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 60%;
+  }
+
+  img {
+    max-height: 90%;
+    max-width: 100%;
+  }
+
+  .header {
+    height: 62.4rem;
+  }
+  .header-menu-item {
+    padding: 1.5rem 1.5rem;
+  }
+
+  .story-vector {
+    display: none;
+  }
+  .story-dog {
+    max-height: 100%;
+  }
+  .story-content {
+    margin-top: 3rem;
+    margin-left: 15rem;
+    margin-right: 2rem;
+    z-index: 2;
+  }
+  .story-sub {
+    gap: 2rem;
+  }
+  .story-sub-p {
+    letter-spacing: 0;
+  }
+  .story-place {
+    z-index: 2;
+  }
+  .story-chicken-img {
+    top: 82%;
+  }
+  .story-chicken-title {
+    top: 107.2%;
+    left: 31.2%;
+    width: 37.2rem;
+    height: 9.5rem;
+  }
+  .story-chicken-subTitle {
+    display: none;
+  }
+
+  .perfect {
+    margin-top: 20.8rem;
+  }
+  .perfect-content {
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+  }
+  .perfect-dog {
+    width: 34.2rem;
+    height: 42.4rem;
+  }
+  .perfect-vector {
+    display: none;
+  }
+
+  .about-dog {
+    display: none;
+  }
+
+  .find {
+    margin-left: 10.2rem;
+    margin-right: 13rem;
+  }
+
+  .footer {
+    height: 45.5rem;
+  }
+  .footer-container {
+    gap: 0;
+  }
+  .footer-menu-link {
+    letter-spacing: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 55%;
+  }
+
+  img {
+    max-height: 80%;
+    max-width: 100%;
+  }
+
+  .header {
+    height: 58.6rem;
+    padding-top: 1.8rem;
+  }
+  .header-menu-item {
+    padding: 1rem 1.5rem;
+  }
+  .header-menu-link {
+    letter-spacing: 0;
+  }
+
+  .story-vector {
+    display: none;
+  }
+  .story-dog {
+    max-height: 100%;
+  }
+  .story-content {
+    margin-top: 3rem;
+    margin-left: 15rem;
+    margin-right: 2rem;
+    z-index: 2;
+  }
+  .story-sub {
+    gap: 2rem;
+  }
+  .story-sub-p {
+    letter-spacing: 0;
+  }
+  .story-place {
+    display: none;
+  }
+  .story-chicken-img {
+    top: 116%;
+  }
+  .story-chicken-title {
+    top: 125.2%;
+    left: 31.2%;
+    width: 37.2rem;
+    height: 9.5rem;
+  }
+  .story-chicken-subTitle {
+    display: none;
+  }
+
+  .perfect {
+    margin-top: 20.8rem;
+  }
+  .perfect-content {
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+  }
+  .perfect-dog {
+    width: 34.2rem;
+    height: 42.4rem;
+  }
+  .perfect-vector {
+    display: none;
+  }
+
+  .about {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .about-dog {
+    display: none;
+  }
+  .about-container {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .about-search {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .about-content-p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+  }
+
+  .find {
+    margin-left: 15rem;
+    margin-right: 4rem;
+  }
+  .find-container > img {
+    display: none;
+  }
+
+  .footer {
+    height: 41.5rem;
+    margin-top: 3rem;
+  }
+  .footer-container {
+    gap: 0;
+  }
+  .footer-content {
+    height: 5.9rem;
+  }
+  .footer-menu {
+    margin-bottom: 1rem;
+  }
+  .footer-menu-top {
+    margin-bottom: 1rem;
+  }
+  .footer-menu-link:first-child {
+    padding-right: 3.1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 70%;
+  }
+
+  .header {
+    height: 47.1rem;
+    padding-top: 1.8rem;
+  }
+  .header label {
+    display: block;
+  }
+  .header label #btn {
+    display: block;
+  }
+  .header-menu-list {
+    position: fixed;
+    width: 38%;
+    height: 24%;
+    right: -100%;
+    background-color: #412e34;
+    display: flex;
+    top: 7%;
+    align-items: center;
+    z-index: 2;
+    flex-direction: column;
+    transform: all 5s;
+  }
+  .header-menu-item {
+    padding: 2rem;
+  }
+  #check:checked ~ .header-menu-list {
+    right: 0;
+  }
+  .header #check:checked ~ label #btn {
+    display: none;
+  }
+  .header #check:checked ~ label #cancel {
+    display: block;
+  }
+
+  .story-vector {
+    display: none;
+  }
+  .story-dog {
+    max-height: 100%;
+  }
+  .story-content {
+    margin-top: 3rem;
+    margin-left: 15rem;
+    margin-right: 2rem;
+    z-index: 2;
+  }
+  .story-sub {
+    gap: 2rem;
+  }
+  .story-sub-p {
+    letter-spacing: 0;
+  }
+  .story-place {
+    display: none;
+  }
+  .story-chicken-img {
+    top: 116%;
+  }
+  .story-chicken-title {
+    top: 125.2%;
+    left: 31.2%;
+    width: 37.2rem;
+    height: 9.5rem;
+  }
+  .story-chicken-subTitle {
+    display: none;
+  }
+
+  .perfect {
+    margin-top: 20.8rem;
+  }
+  .perfect-content {
+    margin-left: 4rem;
+  }
+  .perfect-dog {
+    width: 34.2rem;
+    height: 42.4rem;
+  }
+  .perfect-vector {
+    display: none;
+  }
+
+  .about {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .about-dog {
+    top: 19.5%;
+    left: 73%;
+    display: block;
+  }
+  .about-container {
+    margin-left: 4rem;
+  }
+  .about-right {
+    display: none;
+  }
+
+  .find {
+    margin-left: 15rem;
+    margin-right: 4rem;
+  }
+  .find-container > img {
+    display: none;
+  }
+
+  .footer {
+    height: 33.5rem;
+    margin-top: 3rem;
+  }
+  .footer-container {
+    gap: 0;
+  }
+  .footer-content {
+    height: 5.9rem;
+  }
+  .footer-menu {
+    margin-bottom: 1rem;
+  }
+  .footer-menu-top {
+    margin-bottom: 1rem;
+  }
+  .footer-menu-link:first-child {
+    padding-right: 3.1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 45%;
+  }
+
+  img {
+    max-height: 60%;
+    max-width: 100%;
+  }
+
+  .header {
+    height: 34.1rem;
+  }
+  .header-logo > img {
+    font-size: 4rem;
+  }
+
+  .story-content {
+    margin-left: 3rem;
+  }
+  .story-chicken-title {
+    left: 22.2%;
+  }
+
+  .perfect {
+    align-items: center;
+  }
+  .perfect-dog {
+    width: 36.2rem;
+    height: 30.4rem;
+  }
+  .perfect-content {
+    margin-top: 3rem;
+  }
+
+  .about-left {
+    margin-left: 6rem;
+  }
+  .about-dog {
+    display: none;
+  }
+
+  .find {
+    margin-left: 8rem;
+  }
+
+  .footer {
+    height: 23.5rem;
+  }
+  .footer-content {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

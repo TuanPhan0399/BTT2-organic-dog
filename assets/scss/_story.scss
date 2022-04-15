@@ -1,6 +1,5 @@
 // story
 .story {
-  margin-top: 6.5rem;
   @include flex ($justify: space-between);
 
   &-dog {
@@ -17,6 +16,7 @@
 
   &-chicken-img {
     position: absolute;
+    width: 144rem;
     top: 114%;
     z-index: 0;
   }
@@ -44,6 +44,7 @@
     margin-top: 8.5rem;
     margin-left: 21.2rem;
     gap: 8.7rem;
+    z-index: 2;
   }
 
   &-heading {
