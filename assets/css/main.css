@@ -497,8 +497,17 @@ body {
     display: none;
   }
 
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
   .about-dog {
-    display: none;
+    position: initial;
+  }
+  .about-container {
+    flex-direction: column;
+    gap: 3rem;
   }
 
   .find {
@@ -537,11 +546,16 @@ body {
     letter-spacing: 0;
   }
 
+  .story {
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 2rem;
+  }
   .story-vector {
     display: none;
   }
   .story-dog {
-    max-height: 100%;
+    left: 0;
   }
   .story-content {
     margin-top: 3rem;
@@ -556,13 +570,13 @@ body {
     letter-spacing: 0;
   }
   .story-place {
-    display: none;
+    margin-top: 0;
   }
   .story-chicken-img {
-    top: 116%;
+    top: 81%;
   }
   .story-chicken-title {
-    top: 125.2%;
+    top: 96.2%;
     left: 31.2%;
     width: 37.2rem;
     height: 9.5rem;
@@ -590,9 +604,6 @@ body {
     margin-top: 0;
     margin-bottom: 0;
   }
-  .about-dog {
-    display: none;
-  }
   .about-container {
     margin-left: 4rem;
     margin-right: 4rem;
@@ -608,11 +619,8 @@ body {
   }
 
   .find {
-    margin-left: 15rem;
+    margin-left: 4rem;
     margin-right: 4rem;
-  }
-  .find-container > img {
-    display: none;
   }
 
   .footer {
@@ -744,12 +752,9 @@ body {
     overflow: hidden;
   }
 
-  .find {
-    margin-left: 15rem;
-    margin-right: 4rem;
-  }
-  .find-container > img {
-    display: none;
+  .find-container {
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer {
@@ -791,9 +796,9 @@ body {
 
   .story-content {
     flex-direction: column;
-    align-items: center;
-    margin-left: 3rem;
-    gap: 2rem;
+    align-items: flex-end;
+    margin-left: 4rem;
+    gap: 13rem;
   }
   .story-sub {
     align-items: center;
@@ -807,10 +812,11 @@ body {
     line-height: 1.5;
   }
   .story-chicken-title {
-    left: 22.2%;
+    left: 15.2%;
+    top: 120.2%;
   }
   .story-dog {
-    display: none;
+    height: 26rem;
   }
 
   .heading {
@@ -823,9 +829,10 @@ body {
 
   .perfect {
     align-items: center;
+    flex-direction: column-reverse;
   }
   .perfect-dog {
-    display: none;
+    margin-right: 0;
   }
   .perfect-content {
     margin-top: 3rem;
@@ -839,6 +846,12 @@ body {
     line-height: 1.5;
   }
 
+  .about {
+    flex-direction: column-reverse;
+  }
+  .about-dog {
+    height: 46rem;
+  }
   .about-container {
     align-items: start;
     padding-top: 3rem;

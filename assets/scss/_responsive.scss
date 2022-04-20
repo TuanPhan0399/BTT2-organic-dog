@@ -48,7 +48,7 @@
     &-place {
       z-index: 2;
     }
- 
+
     &-chicken-img{
       top: 82%;
     }
@@ -81,9 +81,20 @@
       display: none;
     }
   }
-  
-  .about-dog {
-    display: none;
+
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &-dog {
+      position: initial;
+    }
+
+    &-container {
+      flex-direction: column;
+      gap: 3rem;
+    }
   }
 
   .find {
@@ -129,13 +140,16 @@
   }
 
   .story {
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 2rem;
 
     &-vector {
       display: none;
     }
 
     &-dog {
-      max-height: 100%;
+      left: 0;
     }
 
     &-content {
@@ -152,17 +166,17 @@
         letter-spacing: 0;
       }
     }
-    
+
     &-place {
-      display: none;
+      margin-top: 0;
     }
 
     &-chicken-img{
-      top: 116%;
+      top: 81%;
     }
 
     &-chicken-title {
-      top: 125.2%;
+      top: 96.2%;
       left: 31.2%;
       width: 37.2rem;
       height: 9.5rem;
@@ -194,9 +208,6 @@
     margin-top: 0;
     margin-bottom: 0;
 
-    &-dog {
-      display: none;
-    }
 
     &-container {
       margin-left: 4rem;
@@ -216,12 +227,8 @@
   }
 
   .find {
-    margin-left: 15rem;
+    margin-left: 4rem;
     margin-right: 4rem;
-
-    &-container > img {
-      display: none;
-    }
   }
 
   .footer {
@@ -323,7 +330,7 @@
         letter-spacing: 0;
       }
     }
-    
+
     &-place {
       display: none;
     }
@@ -378,14 +385,13 @@
   }
 
   .find {
-    margin-left: 15rem;
-    margin-right: 4rem;
 
-    &-container > img {
-      display: none;
+    &-container {
+      flex-direction: column;
+      align-items: center;
     }
   }
-  
+
   .footer {
     height: 33.5rem;
     margin-top: 3rem;
@@ -430,12 +436,12 @@
   }
 
   .story {
-    
+
     &-content {
       flex-direction: column;
-      align-items: center;
-      margin-left: 3rem;
-      gap: 2rem;
+      align-items: flex-end;
+      margin-left: 4rem;
+      gap: 13rem;
     }
 
     &-sub {
@@ -453,11 +459,12 @@
     }
 
     &-chicken-title {
-      left: 22.2%;
+      left: 15.2%;
+      top: 120.2%;
     }
 
     &-dog {
-      display: none;
+      height: 26rem;
     }
   }
 
@@ -471,9 +478,10 @@
 
   .perfect {
     align-items: center;
+    flex-direction: column-reverse;
 
     &-dog {
-      display: none;
+      margin-right: 0;
     }
 
     &-content {
@@ -491,6 +499,11 @@
   }
 
   .about {
+    flex-direction: column-reverse;
+
+    &-dog {
+      height: 46rem;
+    }
 
     &-container {
       align-items: start;
